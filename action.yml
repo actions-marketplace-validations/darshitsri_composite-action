@@ -11,4 +11,7 @@ runs:
       env:
         pwd: ${{ inputs.PATH }}
         BUILD_TYPE: ${{ inputs.BUILD_TYPE }}
+        DIST: ${{ inputs.DIST_FOLDER }}
+        IMG: ${{ inputs.IMAGE }}
+        LIC: ${{ inputs.LICENSE }}
       run: $GITHUB_ACTION_PATH/entrypoint.sh
