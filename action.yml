@@ -9,6 +9,6 @@ runs:
   steps:
     - shell: bash
       env:
-        pwd: ${{ /home/runner/work/c-program-code/c-program-code }}
+        pwd: ${{ inputs.PATH }}
         BUILD_TYPE: ${{ inputs.BUILD_TYPE }}
       run: $GITHUB_ACTION_PATH/entrypoint.sh
