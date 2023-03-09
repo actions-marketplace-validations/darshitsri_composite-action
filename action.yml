@@ -1,5 +1,8 @@
 name: 'cmkae-build'
 author: 'darshit'
+branding:
+  icon: 'archive'
+  color: 'yellow'
 description: 'for cpp programe build'
 runs:
   using: composite
