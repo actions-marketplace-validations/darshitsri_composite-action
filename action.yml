@@ -1,0 +1,10 @@
+name: 'cmkae-build'
+author: 'darshit'
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      env:
+        pwd: ${{ /home/runner/work/c-program-code/c-program-code }}
+        BUILD_TYPE: ${{ inputs.BUILD_TYPE }}
+      run: $GITHUB_ACTION_PATH/entrypoint.sh
